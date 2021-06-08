@@ -8,10 +8,108 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-.question {
-  font-weight: 400;
-  font-size: 20px;
+header {
+  position: relative;
+  height: 95px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  border-bottom: solid 1px ;
 }
-.answer {
+
+ul {
+  list-style: none;
+  display: inline-block;
+}
+li {
+  display: inline-block;
+}
+
+main {
+  margin-top: 150px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.flex-center-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .logo {
+  position: absolute;
+  display: inline-block;
+}
+
+nav ul {  
+  position: absolute;
+  bottom: 0;
+  color: grey;
+}
+
+nav li {  
+  margin-left: 30px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+header .account-apps {
+  margin-top: 20px;
+}
+
+header .account-apps .apps {
+  display: flex;
+  align-items: center;
+  
+}
+
+header .account-apps li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header .account-apps .account {
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  text-align: center;
+  background-color: #F3386F;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+
+main .question {
+  margin-top: 50px;
+  font-size: 25px;
+}
+main .answer {
+  margin-top: 25px;
   font-weight: 300;
+}
+
+.active {
+  color: #205CCC;
+  border-bottom: solid 3px ;
 }
